@@ -17,26 +17,80 @@
 	clear: both;
 }
 
-/******************************************
-/* BASE STYLES
-/*******************************************/
+/* 
+===========================================
+=============== Base Styles ===============
+=========================================== 
+*/
+
+/* 
+Header/Main: #f5f9fc
+Dark-Blue: #2e4458
+Light-Gray: #e1e9f0
+*/
 
 body {
+     font-family: 'Roboto', sans-serif;
+}
 
+ul {
+     margin: 0;
+     padding: 0;
+}
+
+li {
+     list-style: none;
+}
+
+a {
+     text-decoration: none;
+     color: #2e4458;
+     font-weight: 300;
+}
+
+/* 
+===========================================
+================= Layout  =================
+=========================================== 
+*/
+
+.nav-list {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: .5rem;
+}
+
+.nav-list li {
+     float: left;
+}
+
+/* 
+===========================================
+============ Additional Styles ============
+=========================================== 
+*/
+
+.primary-header {
+     background: #f5f9fc;
 }
 
 
-/******************************************
-/* LAYOUT
-/*******************************************/
-header {
-
+.spacing {
+     padding-right: 1rem;
 }
 
-footer {
-
+.logo {
+     font-size: 1.5rem;
+     font-weight: 500;
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+.button {
+     background: #2e4458;
+     padding: .5rem;
+}
+
+.button-text {
+     font-weight: 400;
+     color: #f5f9fc;
+}
