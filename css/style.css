@@ -26,6 +26,7 @@
 /* 
 Header/Main: #f5f9fc
 Dark-Blue: #2e4458
+Dark-Gray-Blue: #8a9fb1
 Light-Gray: #e1e9f0
 */
 
@@ -48,6 +49,29 @@ a {
      font-weight: 300;
 }
 
+a:hover {
+     color: #8a9fb1;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+     color: #2e4458;
+}
+
+.button {
+     background: #2e4458;
+     padding: .5rem 1.5rem;
+}
+
+.button-text {
+     font-size: .9rem;
+     font-weight: 400;
+     color: #f5f9fc;
+}
+
+.button:hover {
+     background: #8a9fb1;
+}
+
 /* 
 ===========================================
 ================= Layout  =================
@@ -58,7 +82,7 @@ a {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     padding: .5rem;
+     padding: 1rem 4rem;
 }
 
 .nav-list li {
@@ -69,6 +93,10 @@ a {
 ===========================================
 ============ Additional Styles ============
 =========================================== 
+*/
+
+/*
+----------------- header -----------------
 */
 
 .primary-header {
@@ -85,12 +113,200 @@ a {
      font-weight: 500;
 }
 
-.button {
-     background: #2e4458;
-     padding: .5rem;
+/*
+----------------- main -----------------
+*/
+
+.content {
+     height: 100%;
+     padding: 4rem 0 8rem 0;
+     background: #f5f9fc;
+     overflow: hidden;
 }
 
-.button-text {
-     font-weight: 400;
-     color: #f5f9fc;
+.main-info,
+.main-image {
+     float: left;
+     width: 50%;
+     background: #f5f9fc;
+}
+
+/* main information */
+
+.main-info {
+     padding: 3rem 0 0 9rem;
+}
+
+.tagline,
+.placeholder {
+     color: #8a9fb1;
+     font-size: .8rem;
+}
+
+.title {
+     margin: 1rem 0 1.5rem 0;
+     font-size: 2.3rem;
+}
+
+.placeholder {
+     display: inline-block;
+     padding: .7rem 10rem .55rem 1rem;
+     background: #e0e9f0;
+}
+
+.placeholder:hover {
+     box-shadow:0 0 0 .1rem #2e4458 inset;
+}
+
+.main-paragraph {
+     font-weight: 300;
+     line-height: 1.5;
+     font-size: 1rem;
+}
+
+
+/* main image */
+
+.display {
+     width: 100%;
+}
+
+
+/*
+----------------- features -----------------
+*/
+
+
+.features {
+     padding: 0 9rem;
+     background: #f5f9fc;
+     overflow: hidden;
+}
+
+.feature-icon {
+     width: 2.5rem;
+}
+
+.feature-one,
+.feature-two,
+.feature-three,
+.feature-four {
+     float: left;
+     width: 25%;
+     background: #f5f9fc;
+     padding-bottom: 3rem;
+}
+
+.feature-header {
+     font-size: 1.1rem;
+}
+
+.feature-paragraph {
+     font-size: 1rem;
+     font-weight: 300;
+     line-height: 1.5;
+}
+
+.feature-link {
+     font-weight: 500;
+     font-size: .9rem;
+}
+
+/*
+----------------- extended -----------------
+*/
+
+.extended {
+     padding: 0 9rem;
+}
+
+.extended-title {
+     font-size: 3rem;
+}
+
+.extended-paragraph {
+     color: #8d9eaf;
+     font-size: 1.25rem;
+}
+
+.rectangle {
+     margin: 4rem 0;
+     width: 100%;
+     height: 40rem;
+     background: #e0e9f0;
+}
+
+/*
+----------------- footer -----------------
+*/
+
+.primary-footer {
+     width: 100%;
+     height: 15rem;
+     background: #2e4458;
+}
+
+
+/* 
+===========================================
+============== Media Queries ==============
+=========================================== 
+*/
+
+@media screen and (max-width: 1210px) {
+     .feature-one,
+     .feature-two,
+     .feature-three,
+     .feature-four {
+          width: 50%;
+     }
+}
+
+@media screen and (max-width: 960px) {
+     .main-info {
+          float: none;
+          width: 100%;
+     }
+
+     .main-image {
+          width: 0;
+     }
+
+     .feature-one,
+     .feature-two,
+     .feature-three,
+     .feature-four {
+          float: none;
+          width: 100%;
+     }
+}
+
+@media screen and (max-width: 660px) {
+     .nav-list li:not(.logo-li) {
+          display: none;
+     }
+
+     .nav-list {
+          justify-content: center;
+          border-bottom: .1rem solid #2e4458;
+     }
+
+     .logo {
+          font-size: 2rem;
+     }
+
+     .break,
+     .rectangle {
+          display: none;
+     }
+
+     .main-info,
+     .extended {
+          padding-left: 3rem;
+          padding-right: 3rem;
+     }
+
+     .extended-paragraph {
+          margin-bottom: 6rem;
+     }
 }
