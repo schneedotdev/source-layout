@@ -100,6 +100,10 @@ h1, h2, h3, h4, h5, h6, p {
 ----------------- header -----------------
 */
 
+.menu-icon {
+     display: none;
+}
+
 .primary-header {
      background: #f5f9fc;
 }
@@ -184,8 +188,22 @@ h1, h2, h3, h4, h5, h6, p {
      overflow: hidden;
 }
 
+
+
 .feature-icon {
      width: 2.5rem;
+}
+
+.icon-two {
+     width: 2.4rem;
+}
+
+.icon-three {
+     width: 2.55rem;
+}
+
+.icon-four {
+     width: 2.2rem;
 }
 
 .feature-one,
@@ -274,6 +292,10 @@ h1, h2, h3, h4, h5, h6, p {
           padding: 3rem 0 0 1.5rem;
      }
 
+     .features {
+          padding: 0 2rem;
+     }
+
      .feature-one,
      .feature-two,
      .feature-three,
@@ -281,9 +303,50 @@ h1, h2, h3, h4, h5, h6, p {
           float: none;
           width: 100%;
      }
+
+     .feature-header {
+          font-size: 2rem;
+     }
+
+     .feature-paragraph {
+          font-size: 1.6rem;
+     }
+
+     .feature-link {
+          font-size: 1.25rem;
+     }
 }
 
 @media screen and (max-width: 660px) {
+
+     .menu-icon {
+          display: inline-block;
+          position: absolute;
+     }
+
+     .menu-top,
+     .menu-middle,
+     .menu-bottom {
+          position: absolute;
+          width: 2.5rem;
+          height: .25rem;
+          border-radius: .5rem;
+          background: #2e4458;
+          left: 1.5rem;
+     }
+
+     .menu-top {
+          top: 1.25rem;
+     }
+
+     .menu-middle {
+          top: 2rem;
+     }
+
+     .menu-bottom {
+          top: 2.75rem;
+     }
+
      .nav-list li:not(.logo-li) {
           display: none;
      }
@@ -300,12 +363,6 @@ h1, h2, h3, h4, h5, h6, p {
      .rectangle {
           display: none;
      }
-
-     /* .main-info,
-     .extended {
-          padding-left: 20%;
-          padding-right: 10%;
-     } */
 
      .extended-paragraph {
           margin-bottom: 6rem;
@@ -348,5 +405,4 @@ h1, h2, h3, h4, h5, h6, p {
      .main-paragraph {
           font-size: 1.25rem;
      }
-
 }
